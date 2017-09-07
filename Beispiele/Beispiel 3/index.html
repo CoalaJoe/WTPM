@@ -2,27 +2,45 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
     <title>HTML Formulare</title>
 </head>
 <body>
-<form>
-    <label for="anrede">Anrede:</label>
-    <select id="anrede">
-        <option>Herr</option>
-        <option>Frau</option>
-    </select>
-    <label>Name: <input placeholder="Mustermann"></label>
-    <label>Vorname: <input placeholder="Max"></label>
-    <label>Addresse: <input placeholder="Musterstrasse 11"></label>
-    <label>PLZ: <input placeholder="1234" type="number"></label>
-    <label>Ort: <input placeholder="Musterdorf"></label>
-    <label>E-Mail: <input placeholder="max@mustermann.ch" type="email"></label>
-    <label>Telefon: <input placeholder="+41123456789" type="tel"></label>
-    <label>Wie wurden Sie auf uns aufmerksam?</label>
-    <label>Google <input type="radio" name="info" value="Google"></label>
-    <label>Freunde <input type="radio" name="info" value="Freunde"></label>
-    <label>Andere <input type="radio" name="info" value="Andere"></label>
-    <label>Mitteilung: <textarea placeholder="Sehr geehrtes .... Team...." required></textarea></label>
-</form>
+<header>
+    <img id="logo" src="logo.png">
+</header>
+<nav>
+    <ul>
+        <li><a href="">Willkommen</a></li>
+        <li><a href="">Organisation</a></li>
+        <li><a href="">Unterlagen</a></li>
+        <li><a href="">Wiki</a></li>
+        <li><a href="">Kontakt</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="heading">
+        <h1>Hypertext Markup Language</h1>
+    </div>
+    <form>
+        <label for="anrede">Anrede:</label>
+        <select id="anrede">
+            <option>Herr</option>
+            <option>Frau</option>
+        </select>
+        <label>Name: <input placeholder="Mustermann"></label>
+        <label>Vorname: <input placeholder="Max"></label>
+        <label>Addresse: <input placeholder="Musterstrasse 11"></label>
+        <label>PLZ: <input placeholder="1234" type="number"></label>
+        <label>Ort: <input placeholder="Musterdorf"></label>
+        <label>E-Mail: <input placeholder="max@mustermann.ch" type="email"></label>
+        <label>Telefon: <input placeholder="+41123456789" type="tel"></label>
+        <label>Wie wurden Sie auf uns aufmerksam?</label>
+        <label>Google <input type="radio" name="info" value="Google"></label>
+        <label>Freunde <input type="radio" name="info" value="Freunde"></label>
+        <label>Andere <input type="radio" name="info" value="Andere"></label>
+        <label>Mitteilung: <textarea placeholder="Sehr geehrtes .... Team...." required></textarea></label>
+    </form>
+</main>
 </body>
 </html>

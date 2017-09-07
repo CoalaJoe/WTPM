@@ -1,0 +1,32 @@
+:root {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #1a8f38;
+}
+
+nav > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    color: #ffffff;
+    padding: 20px;
+    display: inline-block;
+}
+
+header {
+    width: 98%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.heading {
+    color: #1a8f38;
+}
+
+#logo {
+
+}
