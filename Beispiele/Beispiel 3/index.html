@@ -2,16 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+    <script data-main="src/js/app" src="src/js/require.js"></script>
     <title>HTML Formulare</title>
 </head>
 <body>
-<header>
-    <img id="logo" src="logo.png">
+<header class="container">
+    <img id="logo" src="src/img/logo.png">
 </header>
 <nav>
-    <ul>
-        <li><a href="">Willkommen</a></li>
+    <ul class="container">
+        <li><a href="" class="active">Willkommen</a></li>
         <li><a href="">Organisation</a></li>
         <li><a href="">Unterlagen</a></li>
         <li><a href="">Wiki</a></li>
@@ -19,28 +20,47 @@
     </ul>
 </nav>
 <main>
-    <div class="heading">
+    <div class="container heading">
         <h1>Hypertext Markup Language</h1>
     </div>
-    <form>
-        <label for="anrede">Anrede:</label>
-        <select id="anrede">
-            <option>Herr</option>
-            <option>Frau</option>
-        </select>
-        <label>Name: <input placeholder="Mustermann"></label>
-        <label>Vorname: <input placeholder="Max"></label>
-        <label>Addresse: <input placeholder="Musterstrasse 11"></label>
-        <label>PLZ: <input placeholder="1234" type="number"></label>
-        <label>Ort: <input placeholder="Musterdorf"></label>
-        <label>E-Mail: <input placeholder="max@mustermann.ch" type="email"></label>
-        <label>Telefon: <input placeholder="+41123456789" type="tel"></label>
-        <label>Wie wurden Sie auf uns aufmerksam?</label>
-        <label>Google <input type="radio" name="info" value="Google"></label>
-        <label>Freunde <input type="radio" name="info" value="Freunde"></label>
-        <label>Andere <input type="radio" name="info" value="Andere"></label>
-        <label>Mitteilung: <textarea placeholder="Sehr geehrtes .... Team...." required></textarea></label>
-    </form>
+    <div class="blue">
+        <div class="container">
+            <p>Die Hypertext Markup Language (englisch für Hypertext-Auszeichnungssprache), abgekürzt HTML, ist eine textbasierte Auszeichnungssprache zur
+                Strukturierung digitaler Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten.</p>
+            <p>HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt. Neben den vom Browser angezeigten Inhalten können
+                HTML-Dateien zusätzliche Angaben in Form von Metainformationen enthalten, z. B. über die im Text verwendeten Sprachen, den Autor oder den
+                zusammengefassten Inhalt des Textes.</p>
+        </div>
+    </div>
 </main>
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <form>
+                <h2>Kontaktformular</h2>
+                <div class="box">
+                    <label>Name: <input required></label>
+                    <label>Vorname: <input required></label>
+                    <label>Addresse: <input required></label>
+                    <label>Ort: <input required></label>
+                    <label>PLZ: <input type="number" required></label>
+                    <label>E-Mail: <input type="email" required></label>
+                    <label>Mitteilung: <textarea required></textarea></label>
+                </div>
+                <button type="submit">Mitteilung absenden</button>
+            </form>
+        </div>
+        <div class="wrapper">
+            <h2>Weitere Informationen</h2>
+            <div class="box">
+                <a href="">Wikipedia HTML</a>
+                <a href="">SelfHTML</a>
+                <a href="">HTML Tutorial - W3School</a>
+                <a href="">HTML - W3C</a>
+            </div>
+            <img src="src/img/html5.png" class="html5">
+        </div>
+    </div>
+</footer>
 </body>
 </html>

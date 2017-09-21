@@ -1,0 +1,127 @@
+:root {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #1a8f38;
+}
+
+nav > ul {
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #1a8f38;
+    font-weight: 500;
+}
+
+h1 {
+    margin: 25px 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav > ul > li:first-child:before {
+    content: '';
+}
+
+nav > ul > li:before {
+    content: '|';
+    color: #ffffff;
+    padding-right: 5px;
+}
+
+nav > ul > li > a {
+    color: #ffffff;
+    padding: 20px;
+    display: inline-block;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 5px auto 15px;
+    padding: 5px 0;
+    display: block;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    border: 0;
+    background-color: #1a8f38;
+    width: 100%;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+header {
+    width: 98%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 49%;
+}
+
+.blue {
+    background-color: #1c415d;
+    color: white;
+}
+
+.html5 {
+    margin-top: 40px;
+}
+
+.box {
+    background-color: #1c415d;
+    color: #ffffff;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+
+.box > a {
+    color: white;
+    text-decoration: underline;
+    display: block;
+    padding: 5px 0;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+footer {
+    background-image: url('../../src/img/html.jpg');
+    background-attachment: fixed;
+}
+
+.blue p {
+    padding: 15px 0;
+    display: inline-block;
+}
+
